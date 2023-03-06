@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./sass/main.scss";
+
+import Wave from "./assets/Hero-wave.svg";
+
+import Header from "./components/Header";
+import Feature from "./components/Feature";
+import Procedure from "./components/Procedure";
+import Pricing from "./components/Pricing";
+import CallToAction from './components/CallToAction';
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="bg">
+        <Header />
+      </div>
+      <img className="bg__wave" src={Wave} alt="wave" />
+      <main>
+        <Feature />
+        <Procedure />
+        <Pricing />
+        <CallToAction />
+        <Footer/>
+      </main>
+    </>
   );
 }
 

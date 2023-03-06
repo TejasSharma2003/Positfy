@@ -1,0 +1,12 @@
+.logo {
+  &__box {
+    & > img {
+      width: 13rem;
+      height: auto;
+      
+      @media (max-width: 30em) {
+        width: 10rem;
+      }
+    }
+  }
+}

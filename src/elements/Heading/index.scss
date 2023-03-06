@@ -1,0 +1,45 @@
+.heading {
+  font-family: var(--primary-font-family);
+  &__primary {
+    font-size: 6rem;
+    color: var(--color-white);
+
+    @media (max-width:70em) {
+      font-size:5rem;
+    }
+  }
+
+  &__secondary
+  {
+    font-size:4.6rem;
+    font-weight: 500;
+
+    @media (max-width:70em) {
+      font-size:3.5rem;
+    }
+  }
+
+  &__tertiary
+  {
+    font-family: var(--secondary-font-family);
+    font-size:4rem;
+    font-weight: 400;
+
+    @media (max-width:70em) {
+      font-size:3rem;
+    }
+    
+    &-sm
+    {
+      font-size: 2.8rem;
+      font-family: 'Open Sans';
+      font-weight: 600;
+
+      @media (max-width:70em) {
+        font-size:2.3rem;
+      }
+
+    }
+  }
+
+}

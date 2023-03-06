@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width:70em) {
+    font-size:56.25%; //9px     
+  }
+
+  @media(max-width:50em)
+  {
+    font-size:50%;
+  }
+
+
+}
+
+body {
+  line-height: 1.7;
+  font-family: "Open Sans", sans-serif;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+::selection {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

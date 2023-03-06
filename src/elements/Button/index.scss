@@ -1,0 +1,48 @@
+.btn {
+  &,
+  &:visited,
+  &:active {
+    display: flex;
+    align-items: center;
+  }
+
+  &__primary {
+    background-color: var(--tertiary-color);
+    font-size: 1.5rem;
+    padding: 0 2.6rem;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+      background-color: #3dd2cc;
+    }
+
+    &--pricing {
+      padding: 1rem 3rem;
+      border-radius: 5px;
+    }
+  }
+
+  &__ghost {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    padding: 0.8rem 3rem;
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--primary-color);
+    }
+
+    &--pricing {
+      font-size: 1.5rem;
+      padding: 1rem 3rem;
+      border-radius: 5px;
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--color-white);
+      }
+    }
+  }
+}

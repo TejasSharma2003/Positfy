@@ -1,0 +1,23 @@
+.para {
+  font-size: 2rem;
+
+  @media (max-width:70em) {
+    font-size:1.7rem; 
+  }
+
+  &__hero {
+    color: var(--secondary-color);
+    // max-width: 60%;
+    margin-bottom: 1.5rem;
+
+    @media(max-width:70em)
+    {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__feature
+  {
+    // max-width: 65%;
+  }
+}
