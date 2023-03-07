@@ -22,7 +22,7 @@ function CallToAction() {
           </div>
         </Container>
       </Section>
-      <img className="section-cta__bg" style={{bottom:'3rem'}}src={waveDown} alt="wave-down" />
+      <img className="section-cta__bg"  src={waveDown} alt="wave-down" />
     </>
   );
 }

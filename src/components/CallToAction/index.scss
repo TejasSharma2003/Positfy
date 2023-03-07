@@ -2,12 +2,12 @@
   text-align: center;
   background-color: var(--primary-color);
 
-  &__bg
-  {
+  padding: 6rem 0 !important;
+  display: block;
+  &__bg {
     display: block;
     width: 100%;
-    position:relative;
-    bottom:-5rem;
+    position: relative;
   }
 
   &__content {
@@ -16,26 +16,21 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width:80%;
-    margin:0 auto;
+    max-width: 80%;
+    margin: 0 auto;
 
-    @media(max-width:45em)
-    {
+    @media (max-width: 45em) {
       max-width: 100%;
     }
 
-
-    .cta
-    {
+    .cta {
       width: 75%;
-      margin:0 auto;
+      margin: 0 auto;
       justify-content: center;
 
-      @media(max-width:45em)
-      {
-        width:100%;
+      @media (max-width: 45em) {
+        width: 100%;
       }
     }
-    
   }
 }

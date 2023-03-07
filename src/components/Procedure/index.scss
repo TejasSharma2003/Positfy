@@ -1,12 +1,12 @@
 .procedure {
-  padding: 0 !important;
+  padding: 1rem 0 !important;
   &__heading {
     text-align: center;
     margin-bottom: var(--mg-btm-section-content);
-  }
 
-  @media (max-width: 35em) {
-    margin-bottom: var(--mg-btm-section-content-tab);
+    @media (max-width: 35em) {
+      margin-bottom: var(--mg-btm-section-content-tab);
+    }
   }
 
   &__bg {
@@ -90,5 +90,10 @@
       display: inline-block;
       color: var(--primary-color);
     }
+  }
+
+  @media(max-width:50em)
+  {
+    padding:7rem 0 !important;
   }
 }
